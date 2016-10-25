@@ -115,3 +115,54 @@ console.log(md.getHTML('.placeholders > .placeholder > h4'));
 md.getHTML('.placeholders > .placeholder > h4')
 //<-----------End of test--------------->
 //<------------------------------------->
+
+//<-----------Adventure Mode Below--------------->
+//<---------------------------------------------->
+
+
+//<-----------Begin test--------------->
+// Add an ajax() function that fetches API data.
+/*
+~ Search API data via url
+~ Convert API data to json
+~ Convert json to function...
+*/
+console.log(md.ajax('http://swapi.co/api/'));
+
+//<-----------End of test--------------->
+//<------------------------------------->
+//<-----------Begin test--------------->
+// Add a getProp() function that gets an element's object property value.
+/*
+
+*/
+
+//<-----------End of test--------------->
+//<------------------------------------->
+
+//<-----------Begin test--------------->
+// Add a setProp() function that sets an element's object property value.
+/*
+
+*/
+
+//<-----------End of test--------------->
+//<------------------------------------->
+
+//<-----------Begin test--------------->
+// Add a getValue() function that sets an form field's value attribute.
+/*
+
+*/
+
+//<-----------End of test--------------->
+//<------------------------------------->
+
+//<-----------Begin test--------------->
+// Add a setValue() function that sets an form field's value attribute.
+/*
+
+*/
+
+//<-----------End of test--------------->
+//<------------------------------------->

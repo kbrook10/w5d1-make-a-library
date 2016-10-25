@@ -51,6 +51,13 @@ Questions:
     var getHTML = function(element){
         return one(element).innerHTML;
     }
+    var ajax = function(url){
+        fetch(url)
+            .then(response => response.json())
+            console.log('did we git here?')
+            .then(response)
+        console.log(response)
+    }
 
     window.md = {
         one: one,
@@ -63,6 +70,7 @@ Questions:
         setAttr: setAttr,
         setHTML: setHTML,
         getHTML: getHTML,
+        ajax: ajax,
     };
 
 }())
