@@ -82,7 +82,7 @@ This project is to increase the understanding of **functional programming** and 
 
 ## Tests
 ```
-//<-----------Begin test---------------> Complete
+//<-----------Begin test--------------->
 // one(): Find one matching element using any CSS selector
 console.log(md.one('body'));
 md.one('body');
@@ -90,24 +90,26 @@ md.one('body');
 //<-----------End of test--------------->
 //<------------------------------------->
 ```
-
-//<-----------Begin test---------------> Complete
+```
+//<-----------Begin test--------------->
 // all(): Find all matching elements using any CSS selector
 console.log(md.all('div'));
 md.all('div');
 
 //<-----------End of test--------------->
 //<------------------------------------->
-
-//<-----------Begin test---------------> Complete
+```
+```
+//<-----------Begin test--------------->
 // remove(): Remove an element
 console.log(md.remove('thead tr :nth-child(1)'));
 md.remove('thead tr :nth-child(1)')
 
 //<-----------End of test--------------->
 //<------------------------------------->
-
-//<-----------Begin test---------------> (Pending Review)
+```
+```
+//<-----------Begin test--------------->
 // addClass(): Add a CSS class to an element
 /*
 ~ Search for element
@@ -118,8 +120,9 @@ md.addClass('.sub-header', 'text-center');
 
 //<-----------End of test--------------->
 //<------------------------------------->
-
-//<-----------Begin test---------------> (Pending Further Review)
+```
+```
+//<-----------Begin test--------------->
 // removeClass(): Remove a CSS class from an element
 /*
 ~ Search for element
@@ -130,7 +133,8 @@ md.removeClass('.sub-header', 'text-center');
 
 //<-----------End of test--------------->
 //<------------------------------------->
-
+```
+```
 //<-----------Begin test---------------> Complete
 // hasClass(): Return true if an element contains a CSS class in it's CSS attribute (see classList documentation)
 /*
@@ -143,8 +147,9 @@ console.log(md.hasClass('h2', '.sub-header'));
 
 //<-----------End of test--------------->
 //<------------------------------------->
-
-//<-----------Begin test---------------> Complete
+```
+```
+//<-----------Begin test--------------->
 // getAttr(): Get an HTML attribute from an element
 /*
 ~ Search for element
@@ -154,10 +159,10 @@ console.log(md.hasClass('h2', '.sub-header'));
 console.log(md.getAttr('.placeholder > img', 'width'));
 md.getAttr('.placeholder > img', 'width');
 
-// console.dir(document.querySelectorAll('.page-header')[0].attributes[0].value)
 //<-----------End of test--------------->
 //<------------------------------------->
-
+```
+```
 //<-----------Begin test--------------->
 // setAttr(): Set an HTML attribute on an element
 /*
@@ -170,7 +175,8 @@ md.setAttr('.placeholders > .placeholder > img','alt', 'some great story');
 
 //<-----------End of test--------------->
 //<------------------------------------->
-
+```
+```
 //<-----------Begin test--------------->
 // setHTML(): Set the innerHTML of an element
 /*
@@ -182,7 +188,8 @@ console.log(md.setHTML('.main h1', 'Tootsie Roll!'));
 md.setHTML('.main h1', 'Tootsie Roll!');
 //<-----------End of test--------------->
 //<------------------------------------->
-
+```
+```
 //<-----------Begin test--------------->
 // getHTML(): Get the innerHTML of an element
 /*
@@ -194,7 +201,7 @@ console.log(md.getHTML('.placeholders > .placeholder > h4'));
 md.getHTML('.placeholders > .placeholder > h4')
 //<-----------End of test--------------->
 //<------------------------------------->
-
+```
 
 ## Contributors
 
