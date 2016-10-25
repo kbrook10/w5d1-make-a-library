@@ -7,11 +7,11 @@ In this assignment, we have created our own custom JavaScript DOM library using 
 Please feel free to [access github repo](https://github.com/kbrook10/w5d1-make-a-library).
 
 ***one():*** *Created function for matching element using any CSS selector*
-* * *
+```
 var one = function(_element = 'body'){
     return document.querySelector(_element);
 }
-* * *  
+```  
 ***all():*** *Created function for matching all elements using any CSS selector*
 * * *
 var all = function(_element = 'body'){
