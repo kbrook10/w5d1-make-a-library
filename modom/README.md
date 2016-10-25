@@ -81,7 +81,7 @@ This project is to increase the understanding of **functional programming** and 
 **Not Applicable...**
 
 ## Tests
-
+```
 //<-----------Begin test---------------> Complete
 // one(): Find one matching element using any CSS selector
 console.log(md.one('body'));
@@ -89,7 +89,7 @@ md.one('body');
 
 //<-----------End of test--------------->
 //<------------------------------------->
-
+```
 
 //<-----------Begin test---------------> Complete
 // all(): Find all matching elements using any CSS selector
