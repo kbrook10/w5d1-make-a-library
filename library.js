@@ -58,6 +58,12 @@
     var one = function (selector){
         return document.querySelector(selector)
     }
+    var getAttr = function(selector, attribute){
+        return one(select.getAttribute(attribute))
+    }
+    var getProp = function('.navbar', property){
+        return one('.navbar')[property] //--> Remember this for HW
+    }
     var capitalizeFirst = function(word){
         return word.charAt(0).toUpperCase() + word.substring(1);
     }
@@ -88,6 +94,8 @@
             document.body.style.backgroundColor = 'lightgreen'
         },
         one: one,
+        getAttr: getAttr,
+        getProp: getProp,
     } // --> This sets the functions
 }())
 

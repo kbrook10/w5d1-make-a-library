@@ -18,3 +18,14 @@ console.log(dog.one('h1'))
 
 //Example of jQuery
 // $('.navbar')
+
+var match = dog.one('.navbar')
+// console.dir(match.getAttribute('class'))
+console.dir(match.getProp('innerHTML')
+
+var pizza = {
+    cheese: 'cheddar',
+    toppings: 'lettuce',
+}
+var property = 'toppings'
+console.log(pizza[property])// --> Dynamic property names

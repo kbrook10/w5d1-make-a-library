@@ -13,34 +13,44 @@ Questions:
 
 (function(){
     'use strict'
-    var one = function(element = 'body'){
-        return document.querySelector(element);
+    var one = function(_element = 'body'){
+        return document.querySelector(_element);
     }
 
-    var all = function(element = 'body'){
-        return document.querySelectorAll(element);
+    var all = function(_element = 'body'){
+        return document.querySelectorAll(_element);
     }
 
-    var remove = function(element = 'body'){
-         return document.querySelector(element).remove();
+    var remove = function(_element = 'body'){
+         one(_element).remove();
     }
 
-    var addClass = function(element = '.sub-header', elementClass = 'text-center'){
-            return document.querySelector(element).classList.add(elementClass);
+    var addClass = function(_element = '.sub-header', _elementClass = 'text-center'){
+            return one(_element).classList.add(_elementClass);
     }
 
-    var removeClass = function(element = '.sub-header', elementClass = 'text-center'){
-            return document.querySelector(element).classList.remove(elementClass);
+    var removeClass = function(_element = '.sub-header', _elementClass = 'well'){
+            return one(_element).classList.remove(_elementClass);
     }
-    var hasClass = function(elements, classMatch){
-        var classArray = document.querySelectorAll(elements)
-        classArray.forEach(function(element){
-            return element.classList.contains(classMatch);
-        })
+    var hasClass = function(_element, classMatch){
+        return one(_element).classList.contains(classMatch);
     }
-    var getAttr = function(elements, indexElement, indexAttribute){
-        return document.querySelector(elements)[indexElement].attribute[indexAttribute].value
-        }
+
+    var getAttr = function(_element, attr){
+        return one(_element).getAttribute(attr);
+    }
+
+    var setAttr = function(element, attr, attrValue){
+        return one(element).setAttribute(attr, attrValue);
+    }
+
+    var setHTML = function(element, innerValue){
+        return one(element).innerHTML = innerValue;
+    }
+
+    var getHTML = function(element){
+        return one(element).innerHTML;
+    }
 
     window.md = {
         one: one,
@@ -50,6 +60,9 @@ Questions:
         removeClass: removeClass,
         hasClass: hasClass,
         getAttr: getAttr,
+        setAttr: setAttr,
+        setHTML: setHTML,
+        getHTML: getHTML,
     };
 
 }())
